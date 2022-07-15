@@ -77,3 +77,56 @@
 
 // console.log(paragraph.hasAttribute('style'));
 // console.log(paragraph.hasAttribute('class'));
+
+
+
+
+// new example
+
+
+
+// const listItem = document.getElementById('list-item');
+
+// console.log(listItem.parentElement);
+// console.log(listItem.parentNode);
+// // these are both the same 
+
+// console.log(listItem.parentElement.parentNode);
+
+
+// const list = document.querySelector('.list');
+// console.log(list.childNodes);                   //here we are calling all Nodes including text or elements which are not visible (spacings)
+// console.log(list.children);                     // here we are calling out to the console only html elements without  any other nodes. 
+// console.log(list.firstChild); // we gonna call a first child which is actually #text and not an element itself
+// console.log(list.firstElementChild);   // here however we are calling out the first element in the list whic is first Home <li>
+// // By doing that we can call elements from the HTML into the console by using parentElement or parentNode thing/
+
+// console.log(listItem.previousSibling);
+// console.log(listItem.nextSibling);
+// console.log(listItem.previousElementSibling);
+// console.log(listItem.nextElementSibling);
+// same story but for the previous sibling and element
+
+
+
+const newEl = document.createElement ('li');
+
+//Here we are created <li> element
+// console.log(newEl);
+
+
+const text = document.createTextNode ('Blog');
+//console.log(text);
+
+newEl.appendChild(text);
+console.log(newEl);
+
+
+
+const list = document.querySelector('.list');
+list.appendChild(newEl);
+list.insertBefore(newEl, list.children[0]);
+
+list.removeChild(newEl)
+console.log(list);
+
