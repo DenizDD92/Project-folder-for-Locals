@@ -127,6 +127,6 @@ const list = document.querySelector('.list');
 list.appendChild(newEl);
 list.insertBefore(newEl, list.children[0]);
 
-list.removeChild(newEl)
+list.removeChild(newEl);
 console.log(list);
 

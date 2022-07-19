@@ -52,8 +52,14 @@
 // const z=10+"20";
 // console.log(z)
 
-// const x="helo" + "world";
-// console.log(x);
+const x="Эдик" + " Привет";
+console.log(x);
+const y="Иди помой" + " посуду :D <3";
+console.log(y);
+
+
+const z="Я буду учит программирование и рубить бабло ";
+console.log(z);
 
 // const f=10+20;
 // console.log(f);
