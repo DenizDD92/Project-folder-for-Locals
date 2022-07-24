@@ -11,13 +11,25 @@ const loginPage=document.querySelector('.login-page');
 
 const middleContent=document.querySelector('.middle-content');
 
-const newsFeedPage=document.querySelector(".feeds-page");
+const newsFeedPage=document.querySelector('.feeds-page');
 
 const loginModal=document.querySelector('.login-modal');
 
 const modalX=document.querySelector('.login-modal i')
 
 const loginFromBtn = document.querySelector('.login-form-btn')
+
+const postBtn= document.querySelector('.post-btn');
+
+const modalWrapper = document.querySelector('.modal-wrapper');
+
+const modal= document.querySelector('.modal');
+
+const postModalX=document.querySelector('.modal-header i');
+
+// const
+
+// const
 // here we are created 2 variables main page and login page. we have to connect them now
 // /*************************************************************************** */
 
@@ -100,7 +112,7 @@ modalX.addEventListener('click', () =>
 {
 loginModal.style.display="none"; 
 
-})
+});
 
 loginFromBtn.addEventListener('click', () =>
 {
@@ -115,4 +127,23 @@ loginFromBtn.addEventListener('click', () =>
     {
         loginModal.style.display='block';
     }
-})
+});
+
+
+// news feed page
+
+// post modal      // here we are doing button to post some stuf, it opens and closes MODAL which is a small window to make a post.
+
+postBtn.addEventListener ('click', () => 
+{
+    modalWrapper.classList.add('modal-wrapper-display');
+    modal.style.display= 'block';
+    
+});
+
+postModalX.addEventListener ('click', () =>
+{
+modal.style.display='none';
+modalWrapper.classList.remove('modal-wrapper-display')
+
+});
