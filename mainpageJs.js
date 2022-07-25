@@ -27,6 +27,13 @@ const modal= document.querySelector('.modal');
 
 const postModalX=document.querySelector('.modal-header i');
 
+const modalPostBtn=document.querySelector('.modal-header button');
+
+const modalFooterPlus=document.querySelector('.modal-footer span');
+
+const modalInput=document.querySelector('.modal-input');
+
+
 // const
 
 // const
@@ -145,5 +152,31 @@ postModalX.addEventListener ('click', () =>
 {
 modal.style.display='none';
 modalWrapper.classList.remove('modal-wrapper-display')
+if (modalInput.value !=="") {
+    modalInput.value="";
+    change0pacity(0.5);
+}
 
 });
+
+// changing opacity here
+const change0pacity=(x) => 
+{
+modalPostBtn.style.opacity=x;
+modalFooterPlus.style.opacity=x;
+};
+
+modalInput.addEventListener('keypress', (e) => 
+{
+    if (e.target.value !=="") {
+        change0pacity(1)
+    }
+});
+// to remove text when click X
+modalInput.addEventListener('blur', (e) => 
+{
+    if (e.target.value ==='') {
+        change0pacity(0.5);
+    }
+});
+

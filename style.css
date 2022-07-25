@@ -832,21 +832,23 @@ padding: 2rem 0;
     justify-items: center;
     align-items: center;
     flex-direction: column; */
-    animation: cycleSecond 20s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+    /* animation: cycleSecond 20s cubic-bezier(0.19, 1, 0.22, 1) infinite; */
+    background-color: hsla(0, 1%, 52%, 0.171);
 }
 
 @keyframes cycleSecond {
     
-    10% { background-color: rgba(240, 226, 28, 0.420);}
-    20% { background-color:rgba(13, 27, 230, 0.42);}
-    30% { background-color: rgba(240, 226, 28, 0.420);}
-    40% { background-color:rgba(13, 27, 230, 0.42);}
-    50% { background-color: rgba(240, 226, 28, 0.420);}
-    60% { background-color:rgba(13, 27, 230, 0.42);}
-    70% { background-color: rgba(240, 226, 28, 0.420);}
-    80% { background-color:rgba(13, 27, 230, 0.42);}
-    90% { background-color: rgba(240, 226, 28, 0.420);}
-    0% { background-color:rgba(13, 27, 230, 0.42);}
+    0% { color:rgba(13, 27, 230, 80);}
+    10% { color: rgba(240, 226, 28, 80);}
+    20% { color:rgba(13, 27, 230, 80);}
+    30% { color: rgba(240, 226, 28, 80);}
+    40% { color:rgba(13, 27, 230, 80);}
+    50% { color: rgba(240, 226, 28, 80);}
+    60% { color:rgba(13, 27, 230, 80);}
+    70% { color: rgba(240, 226, 28, 80);}
+    80% { color:rgba(13, 27, 230, 80);}
+    90% { color: rgba(240, 226, 28, 80);}
+    100% { color:rgba(13, 27, 230, 80);}
     /* 30% { background-color:rgba(19, 62, 201, 0.651);}
     40% { background-color: rgba(240, 226, 28, 0.527);}
     50% { background-color:rgba(19, 62, 201, 0.651);}
@@ -879,6 +881,7 @@ padding: 2rem 0;
     right:2.8rem ;
     font-size: 2rem;
     color: #14141491;
+    animation: cycleSecond 20s cubic-bezier(0.19, 1, 0.22, 1) infinite;
 
 
 }
