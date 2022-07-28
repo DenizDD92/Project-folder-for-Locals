@@ -33,6 +33,17 @@ const modalFooterPlus=document.querySelector('.modal-footer span');
 
 const modalInput=document.querySelector('.modal-input');
 
+// sidebar
+
+// const user = document.querySelector(".user");
+// const sidebar = document.querySelector(".sidebar");
+// const sidebarWrapper = document.querySelector(".sidebar-wrapper");
+const user = document.querySelector('.user');
+
+const sidebarWrapper = document.querySelector('.sidebar-wrapper');
+
+const sidebar = document.querySelector('.sidebar');
+
 
 // const
 
@@ -92,11 +103,7 @@ middleContent.addEventListener('click', e =>
             goToLoginPage();
             loginModal.style.display='block';
         }
-        
-        
-        
-        
-    });
+        });
     
     
     // e.target gives us elements in the console that are actually clicked
@@ -179,4 +186,16 @@ modalInput.addEventListener('blur', (e) =>
         change0pacity(0.5);
     }
 });
+
+
+
+// Sidebar
+user.addEventListener('click', () => 
+{
+    sidebar.classList.add('sidebar-display');
+    sidebarWrapper.classList.add('sidebar-wrapper-display');
+    console.log(123);
+});
+
+
 
