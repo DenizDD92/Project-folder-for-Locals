@@ -225,6 +225,6 @@ toggle.addEventListener('click', () => {
     Array.from(darkElements2).map((darkElements2)=>darkElements2.classList.toggle('dark-2'));
     Array.from(lightText).map((lightText)=>lightText.classList.toggle('light'));
     Array.from(lightText2).map((lightText2)=>lightText2.classList.toggle('light2'));
-    Array.from(borders).map((borders)=> borders.classList.toggle('border-color'))
+    Array.from(borders).map((borders)=> borders.classList.toggle('border-color'));
 });
 // check clg to view results by clicking on the button
