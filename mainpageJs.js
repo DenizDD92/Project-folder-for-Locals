@@ -44,10 +44,10 @@ const sidebarWrapper = document.querySelector('.sidebar-wrapper');
 
 const sidebar = document.querySelector('.sidebar');
 
-
-// const
-
-// const
+const xBtn2= document.querySelector('.exp')
+const xBtn= document.querySelector('.sidebar-header i')
+const toggle = document.querySelector('.toggle')
+const circle= document.querySelector('.circle')
 // here we are created 2 variables main page and login page. we have to connect them now
 // /*************************************************************************** */
 
@@ -194,8 +194,37 @@ user.addEventListener('click', () =>
 {
     sidebar.classList.add('sidebar-display');
     sidebarWrapper.classList.add('sidebar-wrapper-display');
-    console.log(123);
+    
 });
 
 
+xBtn.addEventListener ('click', () => {
+    sidebar.classList.remove('sidebar-display');
+    
+    sidebarWrapper.classList.remove('sidebar-wrapper-display');
 
+});
+
+// xBtn2.addEventListener('click', () => {
+//     sidebar.classList.remove('sidebar-display');
+    
+//     sidebarWrapper.classList.remove('sidebar-wrapper-display');
+
+// });
+// darkmode
+const darkElements1=document.querySelectorAll('.dark-mode-1');
+const darkElements2=document.querySelectorAll('.dark-mode-2');
+const lightText=document.querySelectorAll('.light-text');
+const lightText2=document.querySelectorAll('.light-text2');
+const borders=document.querySelectorAll('.border');
+// WE SELECTED ALL DARK MODE 1&2 CLASSES
+
+toggle.addEventListener('click', () => {
+    circle.classList.toggle('move');
+    Array.from(darkElements1).map((darkElements1)=>darkElements1.classList.toggle('dark-1'));
+    Array.from(darkElements2).map((darkElements2)=>darkElements2.classList.toggle('dark-2'));
+    Array.from(lightText).map((lightText)=>lightText.classList.toggle('light'));
+    Array.from(lightText2).map((lightText2)=>lightText2.classList.toggle('light2'));
+    Array.from(borders).map((borders)=> borders.classList.toggle('border-color'))
+});
+// check clg to view results by clicking on the button
